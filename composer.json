@@ -1,0 +1,33 @@
+{
+    "name": "specialist/yii2-excel-report",
+    "description": "An extension for generate excel file from GridView content",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","excel","report","excelreport"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Specialist001",
+            "email": "darking-uz@yandex.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.49",
+        "yiisoft/yii2-queue": "^2.3",
+        "wilsonglasser/spout": "*",
+        "jeremeamia/superclosure":"*"
+    },
+    "autoload": {
+        "psr-4": {
+            "specialist\\excelreport\\": "src"
+        }
+    },
+    "extra": {
+        "bootstrap": "specialist\\excelreport\\Bootstrap"
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": false,
+            "craftcms/plugin-installer": false
+        }
+    }
+}
